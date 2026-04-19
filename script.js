@@ -3,6 +3,7 @@ const navMenu = document.querySelector(".nav-menu");
 const year = document.querySelector("#year");
 const reveals = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector(".contact-card");
+const driftingBlocks = document.querySelectorAll("[data-drift]");
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -36,6 +37,23 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach((element) => observer.observe(element));
+
+driftingBlocks.forEach((block) => {
+  block.addEventListener("pointermove", (event) => {
+    const bounds = block.getBoundingClientRect();
+    const offsetX = event.clientX - bounds.left - bounds.width / 2;
+    const offsetY = event.clientY - bounds.top - bounds.height / 2;
+    const rotateY = (offsetX / bounds.width) * 4;
+    const rotateX = (offsetY / bounds.height) * -4;
+
+    block.style.transform =
+      `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+  });
+
+  block.addEventListener("pointerleave", () => {
+    block.style.transform = "";
+  });
+});
 
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {

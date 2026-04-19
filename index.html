@@ -3,29 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PACE - Coffee Shop Sportif & Popup Store</title>
+    <title>PACE - Athletic Coffee Gallery Paris</title>
     <meta
       name="description"
-      content="PACE est un coffee shop sportif premium au coeur de Paris : healthy food, cafe de specialite, cookies proteines et popup store de marques sportives tendance."
+      content="PACE imagine a Paris un coffee shop sportif a la DA forte, entre healthy indulgence, cafe de specialite et popup store de marques de sport desirables."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Syne:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="page-noise" aria-hidden="true"></div>
+    <div class="background-layers" aria-hidden="true">
+      <span class="gradient-orb orb-a"></span>
+      <span class="gradient-orb orb-b"></span>
+      <span class="gradient-orb orb-c"></span>
+      <span class="mesh-lines"></span>
+    </div>
 
     <header class="site-header">
       <div class="container">
         <nav class="nav">
           <a class="brand" href="#top" aria-label="PACE">
             <span class="brand-mark">PACE</span>
-            <span class="brand-copy">Paris performance cafe</span>
+            <span class="brand-copy">athletic coffee gallery / paris centre</span>
           </a>
 
           <button
@@ -39,9 +44,11 @@
 
           <div class="nav-menu" id="nav-menu">
             <a href="#concept">Concept</a>
-            <a href="#menu">Carte</a>
-            <a href="#popup">Popup Store</a>
+            <a href="#menu">Food Lab</a>
             <a href="#experience">Experience</a>
+            <a href="eshop.html">E-shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#popup">Popup Store</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
@@ -50,105 +57,259 @@
 
     <main id="top">
       <section class="hero">
-        <div class="container hero-grid">
+        <div class="container hero-layout">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Coffee shop sportif / Paris centre</p>
+            <p class="eyebrow">Coffee shop sportif / art direction owner / paris</p>
             <h1>
-              Le lieu ou
-              <span>l'energie saine</span>
-              rencontre la culture sport.
+              Healthy food
+              <span>with gallery energy</span>
+              for the new sport crowd.
             </h1>
             <p class="hero-text">
-              PACE imagine un coffee shop ultra epure pour une clientele active,
-              exigeante et urbaine : cafe de specialite, douceurs proteinees,
-              cuisine fonctionnelle et popup store de marques sportives
-              desirables dans un meme espace.
+              PACE n'est pas un cafe healthy de plus. C'est un lieu manifeste,
+              pense comme une scene parisienne tres designee ou cohabitent cafe
+              de specialite, patisserie proteinee desirante, objets de sport
+              pointus et collaborations en rotation.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-dark" href="#contact">Parler du projet</a>
-              <a class="button button-light" href="#menu">Voir l'experience</a>
+              <a class="button button-dark" href="#contact">Demander le deck</a>
+              <a class="button button-light" href="#concept">Explorer la vision</a>
+            </div>
+
+            <div class="hero-ribbon">
+              <span>protein cookies</span>
+              <span>specialty coffee</span>
+              <span>retail capsules</span>
+              <span>run club mornings</span>
             </div>
           </div>
 
-          <div class="hero-panel reveal">
-            <div class="panel panel-large">
-              <span class="panel-label">Positionnement</span>
-              <p>
-                Un lieu signature pour les matinaux, les sportifs urbains, les
-                coureurs du week-end, les amateurs de beaux objets et les
-                marques qui veulent se montrer dans un contexte credibile.
-              </p>
-            </div>
+          <div class="hero-stage reveal" data-drift>
+            <div class="hero-artboard">
+              <div class="hero-card hero-card-top">
+                <span class="card-label">Paris mood</span>
+                <p>Warm stone, sport ritual, graphic tempo.</p>
+              </div>
 
-            <div class="hero-stats">
-              <div class="panel stat-card">
-                <span class="stat-value">01</span>
-                <p>Healthy food gourmande, jamais punitive.</p>
+              <div class="hero-card hero-card-bottom">
+                <span class="card-label">Brand posture</span>
+                <p>Not fitness coded. Not coffee coded. A new hybrid.</p>
               </div>
-              <div class="panel stat-card">
-                <span class="stat-value">02</span>
-                <p>Popup store curateur de labels sport premium.</p>
-              </div>
-              <div class="panel stat-card">
-                <span class="stat-value">03</span>
-                <p>Direction artistique nette, calme, parisienne.</p>
+
+              <svg
+                class="hero-illustration"
+                viewBox="0 0 680 720"
+                role="img"
+                aria-label="Illustration du concept PACE entre cafe, mouvement et retail"
+              >
+                <defs>
+                  <linearGradient id="heroSun" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f6d0aa" />
+                    <stop offset="100%" stop-color="#d76e4b" />
+                  </linearGradient>
+                  <linearGradient id="heroTrack" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#17332f" />
+                    <stop offset="100%" stop-color="#285249" />
+                  </linearGradient>
+                </defs>
+
+                <rect x="58" y="64" width="560" height="592" rx="88" fill="#f2e6d8" />
+                <circle cx="515" cy="180" r="110" fill="url(#heroSun)" opacity="0.9" />
+                <path
+                  d="M116 508c92-146 198-220 316-220 52 0 100 12 144 36"
+                  fill="none"
+                  stroke="url(#heroTrack)"
+                  stroke-width="52"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M130 556c98-126 198-188 300-188 53 0 99 10 138 30"
+                  fill="none"
+                  stroke="#f8f4ee"
+                  stroke-width="18"
+                  stroke-linecap="round"
+                  stroke-dasharray="8 14"
+                />
+                <path
+                  d="M220 168h120c38 0 70 29 74 67l8 84c5 49 47 86 96 86"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="22"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M212 189h89c27 0 50 21 53 48l9 87c2 17 17 31 35 31h118"
+                  fill="none"
+                  stroke="#f8f4ee"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M206 181l-28-49M265 122l16-42M328 116l38-33"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="11"
+                  stroke-linecap="round"
+                />
+                <ellipse cx="286" cy="474" rx="133" ry="88" fill="#111111" />
+                <ellipse cx="286" cy="474" rx="96" ry="56" fill="#f6efe4" />
+                <path
+                  d="M205 470c22-24 53-37 81-37 33 0 63 13 84 37"
+                  fill="none"
+                  stroke="#d76e4b"
+                  stroke-width="15"
+                  stroke-linecap="round"
+                />
+                <circle cx="214" cy="255" r="16" fill="#d76e4b" />
+                <circle cx="166" cy="308" r="9" fill="#111111" />
+                <circle cx="475" cy="478" r="18" fill="#17332f" />
+                <circle cx="530" cy="438" r="10" fill="#111111" />
+                <path
+                  d="M480 498l82-56"
+                  fill="none"
+                  stroke="#17332f"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M518 520l48-32"
+                  fill="none"
+                  stroke="#d76e4b"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                />
+                <rect x="434" y="504" width="82" height="92" rx="16" fill="#f8f4ee" />
+                <rect x="454" y="488" width="42" height="16" rx="8" fill="#17332f" />
+                <path
+                  d="M457 555h37"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M457 578h54"
+                  fill="none"
+                  stroke="#d76e4b"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                />
+              </svg>
+
+              <div class="hero-metrics">
+                <div>
+                  <strong>01</strong>
+                  <span>specialty coffee precise</span>
+                </div>
+                <div>
+                  <strong>02</strong>
+                  <span>protein indulgence aesthetic</span>
+                </div>
+                <div>
+                  <strong>03</strong>
+                  <span>retail capsules in motion</span>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="ticker reveal" aria-label="Points forts du concept">
-            <span>Cafe de specialite</span>
-            <span>Cookies proteines</span>
-            <span>Banana bread haute nutrition</span>
-            <span>Brands en rotation</span>
-            <span>Run clubs & talks</span>
-            <span>Retail editorialise</span>
           </div>
         </div>
       </section>
 
-      <section class="section intro" id="concept">
-        <div class="container section-grid">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Le concept</p>
-            <h2>
-              Un espace hybride,
-              <span>calme et desirant</span>,
-              pense comme une destination.
-            </h2>
+      <section class="section concept-section" id="concept">
+        <div class="container">
+          <div class="editorial-board reveal">
+            <div class="editorial-intro">
+              <p class="eyebrow">The concept</p>
+              <h2>
+                A coffee shop that looks like a
+                <span>fashionable training ritual</span>
+                rather than a healthy cliche.
+              </h2>
+            </div>
+
+            <div class="editorial-panels">
+              <article class="editorial-panel cream">
+                <span class="panel-kicker">Food</span>
+                <p>
+                  Patisserie proteinee, bowls calibres, toast signatures et
+                  boissons fonctionnelles dans une execution propre, gourmande et
+                  jamais punitive.
+                </p>
+              </article>
+              <article class="editorial-panel forest">
+                <span class="panel-kicker">Scene</span>
+                <p>
+                  Une clientele qui court, travaille, soigne son image et aime
+                  les marques belles. Le lieu devient un repere culturel autant
+                  qu'un cafe.
+                </p>
+              </article>
+              <article class="editorial-panel line-art">
+                <span class="panel-kicker">Tone</span>
+                <p>
+                  Plus galerie athletique que studio fitness. Plus maison de
+                  gout que simple point de vente.
+                </p>
+              </article>
+            </div>
           </div>
 
-          <div class="intro-cards reveal">
-            <article class="info-card">
-              <span class="info-index">A</span>
-              <h3>Food performante</h3>
+          <div class="concept-grid">
+            <article class="story-card reveal">
+              <span class="story-index">A</span>
+              <h3>Paris centre as stage</h3>
               <p>
-                Carte courte, lisible et premium : protein cookies, cakes
-                signatures, bowls nets, boissons fonctionnelles et cafe
-                execute avec precision.
+                Un flagship discret, lumineux, hautement photographiable, pense
+                pour exister autant en vrai que dans le feed de celles et ceux
+                qui definissent les nouvelles scenes sportives.
               </p>
             </article>
 
-            <article class="info-card">
-              <span class="info-index">B</span>
-              <h3>Retail en rotation</h3>
-              <p>
-                Un popup store integre pour accueillir des marques sportives
-                contemporaines, accessoires de training, running essentials et
-                capsules exclusives.
-              </p>
+            <article class="story-card reveal" data-drift>
+              <svg
+                class="story-illustration"
+                viewBox="0 0 400 320"
+                role="img"
+                aria-label="Illustration d'une facade graphique pour le lieu"
+              >
+                <rect x="48" y="36" width="304" height="248" rx="30" fill="#f5ede3" />
+                <rect x="92" y="84" width="216" height="154" rx="20" fill="#153530" />
+                <rect x="122" y="120" width="156" height="82" rx="14" fill="#f7f2eb" />
+                <path
+                  d="M98 103h204"
+                  fill="none"
+                  stroke="#d76e4b"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M148 161h103"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                />
+                <circle cx="324" cy="74" r="21" fill="#d76e4b" />
+                <path
+                  d="M88 255c40-26 79-39 118-39 44 0 82 14 114 40"
+                  fill="none"
+                  stroke="#f3d0ad"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                />
+              </svg>
             </article>
 
-            <article class="info-card">
-              <span class="info-index">C</span>
-              <h3>Communaute elegante</h3>
+            <article class="story-card reveal">
+              <span class="story-index">B</span>
+              <h3>Community with taste</h3>
               <p>
-                Le lieu vit avec une programmation simple et desirable :
-                coffees after run, lancements de collection, talks bien-etre et
-                rendez-vous matinaux.
+                Run clubs, launches, coffee after pilates, product drops,
+                founder talks et rendez-vous matinaux construisent une
+                communaute plus elegante que demonstrative.
               </p>
             </article>
           </div>
@@ -157,168 +318,341 @@
 
       <section class="section menu-section" id="menu">
         <div class="container">
-          <div class="section-top reveal">
-            <p class="eyebrow">La carte</p>
-            <h2>Healthy, precise, gourmand.</h2>
-            <p class="section-text">
-              Une offre volontairement resserree pour installer une image
-              forte, avec des recettes simples a lire mais riches en desir.
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">Food lab</p>
+              <h2>Indulgence recalibrated.</h2>
+            </div>
+            <p class="section-lead">
+              Une carte courte mais tres desiree, avec un langage visuel qui
+              traite la nutrition comme une culture de gout.
             </p>
           </div>
 
-          <div class="menu-grid">
+          <div class="food-lab-grid">
             <article class="menu-card reveal">
-              <span class="menu-tag">Signature sweet</span>
+              <span class="menu-tag">Signature bake</span>
               <h3>Protein cookies</h3>
               <p>
-                Croustillants dehors, moelleux dedans, avec whey isolate,
-                chocolat noir, tahini ou cacahuete grillee.
+                Coeur moelleux, bords nets, vrais toppings et execution bakery.
               </p>
-              <strong>Choco sea salt / Matcha white / Peanut crunch</strong>
+              <strong>black tahini / matcha vanilla / peanut sea salt</strong>
             </article>
 
-            <article class="menu-card reveal accent-card">
-              <span class="menu-tag">Bakehouse</span>
-              <h3>Cakes & banana breads</h3>
-              <p>
-                Cakes proteines, banana bread avoine-amande, topping yaourt
-                grec et zestes frais pour un rendu clean mais tres gourmand.
-              </p>
-              <strong>Lemon poppy / Banana pecan / Espresso cacao</strong>
+            <article class="illustration-card reveal" data-drift>
+              <svg
+                class="food-illustration"
+                viewBox="0 0 520 520"
+                role="img"
+                aria-label="Illustration de food styling graphique"
+              >
+                <rect x="44" y="44" width="432" height="432" rx="72" fill="#f3e8d8" />
+                <circle cx="260" cy="260" r="137" fill="#132f2b" />
+                <circle cx="260" cy="260" r="106" fill="#f7f2eb" />
+                <circle cx="210" cy="228" r="24" fill="#d87a52" />
+                <circle cx="304" cy="214" r="18" fill="#d87a52" />
+                <circle cx="235" cy="306" r="20" fill="#d87a52" />
+                <circle cx="320" cy="296" r="26" fill="#d87a52" />
+                <path
+                  d="M117 151c52-42 97-60 143-60 46 0 91 17 144 60"
+                  fill="none"
+                  stroke="#f7f2eb"
+                  stroke-width="12"
+                  stroke-dasharray="3 18"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M136 385c39-45 82-66 130-66 48 0 91 23 129 67"
+                  fill="none"
+                  stroke="#d87a52"
+                  stroke-width="15"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M102 229l-28-28M416 340l30 28M394 128l34-20"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div class="illustration-caption">
+                <span class="panel-kicker">Visual code</span>
+                <p>
+                  Rond, dense, solaire: la gourmandise devient un motif central
+                  de la marque.
+                </p>
+              </div>
             </article>
 
-            <article class="menu-card reveal">
-              <span class="menu-tag">All day</span>
-              <h3>Bowls & toasts</h3>
+            <article class="menu-card accent-card reveal">
+              <span class="menu-tag">Counter favorites</span>
+              <h3>Cakes, bowls, tonics</h3>
               <p>
-                Recettes brunchables, riches en proteines, pensees pour une
-                clientele du matin au post-training.
+                Banana bread proteine, labneh toast, matcha cloud et collagen
+                mocha dans une grammaire plus mode que wellness.
               </p>
-              <strong>Labneh herbs / Salmon fuel / Green hummus toast</strong>
+              <strong>banana pecan / labneh herb / collagen cocoa</strong>
             </article>
+          </div>
 
-            <article class="menu-card reveal">
-              <span class="menu-tag">Drinks</span>
-              <h3>Cafe & functional blends</h3>
+          <div class="menu-strip reveal">
+            <span>specialty espresso</span>
+            <span>recovery shakes</span>
+            <span>all day bowls</span>
+            <span>functional pastry</span>
+            <span>seasonal drops</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="experience">
+        <div class="container gallery-layout">
+          <div class="gallery-copy reveal">
+            <p class="eyebrow">Daily experience</p>
+            <h2>
+              A full-day rhythm,
+              <span>not just a counter</span>.
+            </h2>
+            <p class="section-lead">
+              Le lieu change de texture au fil de la journee et donne une vraie
+              raison de revenir: ritualiser l'usage plutot que simplement vendre.
+            </p>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <span>07:30</span>
+                <p>Morning crowd, clean caffeine, protein pastry and quiet focus.</p>
+              </article>
+              <article class="timeline-item">
+                <span>12:30</span>
+                <p>Editorial lunch, fast service, strong visual merchandising.</p>
+              </article>
+              <article class="timeline-item">
+                <span>18:30</span>
+                <p>After-run social energy, drops, talks and capsule launches.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="gallery-stage reveal" data-drift>
+            <div class="gallery-poster">
+              <div class="poster-top">
+                <span>PACE rituals</span>
+                <span>edition 01</span>
+              </div>
+
+              <svg
+                class="gallery-illustration"
+                viewBox="0 0 520 640"
+                role="img"
+                aria-label="Poster abstrait representant le rythme d'une journee PACE"
+              >
+                <rect x="46" y="44" width="428" height="552" rx="34" fill="#f7f0e6" />
+                <circle cx="150" cy="180" r="58" fill="#d87750" />
+                <rect x="254" y="118" width="122" height="228" rx="61" fill="#13312d" />
+                <path
+                  d="M101 441c49-62 103-92 162-92 64 0 116 29 157 91"
+                  fill="none"
+                  stroke="#13312d"
+                  stroke-width="22"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M120 510c31-29 66-43 106-43 49 0 91 15 128 46"
+                  fill="none"
+                  stroke="#d87750"
+                  stroke-width="14"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M137 253l204 0"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="14"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M134 286l164 0"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M146 88l58-36M375 394l47 35M376 144l61 0"
+                  fill="none"
+                  stroke="#111111"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+              </svg>
+
+              <div class="poster-notes">
+                <div>
+                  <strong>calm</strong>
+                  <span>morning softness</span>
+                </div>
+                <div>
+                  <strong>pulse</strong>
+                  <span>launches and community</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section destinations-section">
+        <div class="container">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">PACE extensions</p>
+              <h2>Two dedicated pages, not homepage blocks.</h2>
+            </div>
+            <p class="section-lead">
+              L'e-shop cafe et la galerie vetements vivent desormais sur leurs
+              propres pages pour garder une home plus claire, plus manifeste et
+              plus statutaire.
+            </p>
+          </div>
+
+          <div class="destinations-grid">
+            <a class="destination-card reveal" href="eshop.html">
+              <span class="destination-kicker">Dedicated page</span>
+              <h3>Coffee e-shop</h3>
               <p>
-                Espresso propre, matcha ceremonie, protein shakes premium et
-                boissons froides enrichies, sans effet "fitness caricatural".
+                Beans, capsules, subscription et accessoires dans une page
+                proprement orientee produit.
               </p>
-              <strong>House latte / Collagen mocha / Electrolyte tonic</strong>
-            </article>
+              <strong>Open e-shop</strong>
+            </a>
+
+            <a class="destination-card reveal" href="gallery.html">
+              <span class="destination-kicker">Dedicated page</span>
+              <h3>Sportswear gallery</h3>
+              <p>
+                Une page entiere pour les silhouettes, les capsules mode-sport
+                et les pieces disponibles sur place.
+              </p>
+              <strong>Open gallery</strong>
+            </a>
           </div>
         </div>
       </section>
 
       <section class="section popup-section" id="popup">
-        <div class="container popup-grid">
+        <div class="container popup-layout">
+          <div class="popup-stage reveal" data-drift>
+            <svg
+              class="popup-illustration"
+              viewBox="0 0 640 500"
+              role="img"
+              aria-label="Illustration du popup store avec modules retail"
+            >
+              <rect x="48" y="84" width="544" height="332" rx="44" fill="#f6ede2" />
+              <rect x="102" y="136" width="140" height="228" rx="26" fill="#132f2b" />
+              <rect x="262" y="116" width="128" height="248" rx="26" fill="#e3b792" />
+              <rect x="410" y="160" width="128" height="176" rx="26" fill="#111111" />
+              <path
+                d="M126 198h92M126 238h92M126 278h64"
+                fill="none"
+                stroke="#f7f2eb"
+                stroke-width="11"
+                stroke-linecap="round"
+              />
+              <circle cx="326" cy="198" r="34" fill="#f7f2eb" />
+              <path
+                d="M301 275h48"
+                fill="none"
+                stroke="#111111"
+                stroke-width="12"
+                stroke-linecap="round"
+              />
+              <path
+                d="M441 210h60M441 248h42M441 286h78"
+                fill="none"
+                stroke="#f7f2eb"
+                stroke-width="11"
+                stroke-linecap="round"
+              />
+              <path
+                d="M120 94c47-36 87-50 125-50 43 0 80 16 121 48"
+                fill="none"
+                stroke="#d87750"
+                stroke-width="16"
+                stroke-linecap="round"
+              />
+              <path
+                d="M389 74c35 0 69 10 104 33"
+                fill="none"
+                stroke="#132f2b"
+                stroke-width="12"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
           <div class="popup-copy reveal">
             <p class="eyebrow">Popup store</p>
-            <h2>Un corner retail qui change le rythme du lieu.</h2>
-            <p>
-              Au lieu d'un simple decor, le popup store devient une vraie raison
-              de revenir : selection pointue, rotations de marques, editions
-              limitees, accessoires choisis et storytelling propre.
+            <h2>
+              A rotating retail gallery
+              <span>inside the cafe</span>.
+            </h2>
+            <p class="section-lead">
+              Le popup store n'est pas un coin accessoire. C'est un moteur de
+              desir, de repetition de visite et de collaborations presse,
+              influence et community.
             </p>
-            <ul class="detail-list">
-              <li>Marques running, pilates, training et recovery</li>
-              <li>Rotations mensuelles ou capsules evenementielles</li>
-              <li>Merchandising minimal et eclairage galerie</li>
-              <li>Format ideal pour collaborations et lancements presse</li>
-            </ul>
-          </div>
 
-          <div class="popup-showcase reveal">
-            <article class="showcase-block">
-              <span>Rotation 01</span>
-              <h3>Performance wardrobe</h3>
-              <p>Textiles propres, coupe urbaine, coloris mineraux.</p>
-            </article>
-
-            <article class="showcase-block dark">
-              <span>Rotation 02</span>
-              <h3>Running objects</h3>
-              <p>Gourdes, casquettes, lunettes, chaussettes, recovery.</p>
-            </article>
-
-            <article class="showcase-block">
-              <span>Rotation 03</span>
-              <h3>Recovery & ritual</h3>
-              <p>Baumes, magnesium, self-care sportif, editions collab.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section experience-section" id="experience">
-        <div class="container">
-          <div class="section-top reveal">
-            <p class="eyebrow">Experience</p>
-            <h2>Plus qu'un cafe : un point de rendez-vous.</h2>
-          </div>
-
-          <div class="experience-grid">
-            <article class="experience-card reveal">
-              <span class="experience-time">07:30</span>
-              <h3>Morning performance</h3>
-              <p>
-                Premiers cafes, viennoiseries proteinees, clientele active,
-                ambiance lumineuse et silencieuse.
-              </p>
-            </article>
-
-            <article class="experience-card reveal">
-              <span class="experience-time">12:30</span>
-              <h3>Lunch net et rapide</h3>
-              <p>
-                Flux urbain, dejeuner fonctionnel, point de chute de bureaux
-                creatifs et de clients exigeants.
-              </p>
-            </article>
-
-            <article class="experience-card reveal">
-              <span class="experience-time">18:30</span>
-              <h3>After run social</h3>
-              <p>
-                Meetup, lancement de capsule, tasting, rencontre de marques et
-                conversations autour du sport bien pense.
-              </p>
-            </article>
+            <div class="popup-points">
+              <article class="popup-point">
+                <span>01</span>
+                <p>Running, pilates, training, recovery and wardrobe brands.</p>
+              </article>
+              <article class="popup-point">
+                <span>02</span>
+                <p>Monthly rotations, drops and limited editions.</p>
+              </article>
+              <article class="popup-point">
+                <span>03</span>
+                <p>Merchandising styled like a mini gallery exhibition.</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section manifesto-section">
-        <div class="container manifesto reveal">
-          <p class="manifesto-kicker">Intention</p>
-          <blockquote>
-            "Faire naitre a Paris un lieu qui ne choisit pas entre desir,
-            performance et esthetique."
-          </blockquote>
-          <p class="manifesto-text">
-            L'ambition est simple : proposer un coffee shop qui n'imite ni la
-            salle de sport ni le cafe classique, mais qui invente un nouveau
-            territoire de marque pour une clientele qui veut bien manger,
-            s'entrainer, decouvrir et appartenir a une scene.
-          </p>
+        <div class="container reveal">
+          <div class="manifesto-banner">
+            <p class="eyebrow">Brand statement</p>
+            <blockquote>
+              Build the missing Paris address between sport culture, good taste
+              and healthy pleasure.
+            </blockquote>
+          </div>
         </div>
       </section>
 
       <section class="section contact-section" id="contact">
-        <div class="container contact-grid">
+        <div class="container contact-layout">
           <div class="contact-copy reveal">
             <p class="eyebrow">Contact</p>
-            <h2>Un flagship discret, au centre de Paris.</h2>
-            <p>
-              Le site est pense comme une vitrine premium pour lancer le
-              concept, convaincre des partenaires marques et commencer a reunir
-              une communaute.
+            <h2>
+              Ready for a
+              <span>founding conversation</span>?
+            </h2>
+            <p class="section-lead">
+              Cette version du site est pensee comme un manifeste visuel pour
+              poser un territoire de marque fort, convaincre partenaires,
+              investisseurs et futures collaborations.
             </p>
 
-            <div class="contact-details">
-              <p>Paris centre / Marais / Sentier / Palais-Royal</p>
-              <p>Ouverture envisagee / Automne 2026</p>
-              <p>Collaborations / brands@pace-paris.com</p>
+            <div class="contact-badges">
+              <span>paris centre</span>
+              <span>opening target / 2026</span>
+              <span>brand collaborations</span>
             </div>
           </div>
 
@@ -358,8 +692,8 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>PACE - coffee shop sportif & popup store premium</p>
-        <p>&copy; <span id="year"></span> Paris</p>
+        <p>PACE / athletic coffee gallery / popup retail / paris</p>
+        <p>&copy; <span id="year"></span> PACE</p>
       </div>
     </footer>
   </body>
